@@ -1,0 +1,15 @@
+Wat is jullie idee? Wat gaan jullie maken?
+Ons idee is om de website van transformers community te verbeteren op de basis van design en functionaliteiten
+
+Welke functionaliteiten heeft jullie website?
+een inlog/ aanmeld knop
+chatfunctie in het dashboard
+post functie op het dashboard
+
+welke functionaliteiten is er voor de gebruiker en welke voor de admin?
+voor de gebruiker kan je chatten met een van de professionals en je eigen ervaringen delen
+voor de admin heb je een post functie waarme  ze exclusive content kunnen delen.
+
+Wat komt er uit de database?
+de inlog gevens van de klant
+
