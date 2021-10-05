@@ -67,6 +67,17 @@
         </div>
     </div>
 
+    <!-- Missie en visie -->
+    <div class="missie">
+        <h1>Wij zijn een groeiende beweging van jongeren die zich<br> inzet voor mentale gezondheid.</h1>
+        <p>We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid. <br> </p>
+        <p>Daar willen wij samen verandering in brengen!</p>
+        <p>We zijn een community voor jongeren die ervaring en tips uitwisselen op het gebied van mentale gezondheid en persoonlijke <br> Ontwikkeling. Zo creeren we meer openheid en helpen we elkaar om te groeien.</p>
+    </div>
+    <div class="missievisie">
+        <a href="missievisieButton" href="#">Onze Missie & Visie</a>
+    </div>
+
     
 
     <script>
