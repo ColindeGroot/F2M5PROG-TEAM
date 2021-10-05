@@ -240,3 +240,42 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* Missie & Visie */
+.missie{
+    background-image: url("../images/grandious.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 1000px;
+}
+.missieTekst{
+    text-align:center;
+    color:#f2f2f2;
+}
+.missieTitel{
+    font-size:40px;
+}
+.tekstmissie{
+    padding:30px;
+    font-size:20px;
+}
+.missievisie{
+    text-align:center;
+    font-size:20px;
+    text-decoration:none;
+}
+.missievisie>a{
+    color:#f2f2f2;
+    background-color:#7F46F2;
+    padding: 10px;
+    border-radius: 1.5rem;
+    color: white;
+}
+.missievisie>a:hover{
+    background-color: #7F46F2;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
