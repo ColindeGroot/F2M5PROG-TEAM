@@ -126,6 +126,7 @@ header{
     border-radius: 100%;
     background-size: 150% 100%;
     background-position: center;
+    box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0 ;
 }
 
 .transformer1:hover  .black1, .transformer2:hover  .black1, .transformer3:hover  .black1, .transformer4:hover  .black1, .transformer5:hover .black1 {
