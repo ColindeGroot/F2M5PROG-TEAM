@@ -171,11 +171,20 @@ header{
 }
 
 .black1 {
+    display: flex;
     background-color: black;
     height: 300px;
     width: 300px;
     border-radius: 100%;
     visibility: hidden;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;  
+}
+
+.black1>p{
+    margin-left: 45%;
+    opacity: 100%;
 }
 
 
@@ -279,4 +288,47 @@ img {vertical-align: middle;}
 .missievisie>a:hover{
     background-color: #7F46F2;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Doneer en Impact */
+
+.doneerImpact {
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: center;
+    /* align-content: center; */
+    display: grid;
+    grid-gap: 17%;
+    grid-template-columns:  repeat(2, 500px);
+    height: 500px;
+    padding: 100px;
+}
+
+.doneer, .impact {
+    background-color: #533099;
+    color: white;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.doneer {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.impact {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.doneerButton, .impactButton {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }

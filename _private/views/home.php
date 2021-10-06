@@ -47,23 +47,23 @@
     <div class="transformers" id="dash">
         <div class="transformer1">
             <a href="#"><p></p></a>
-            <div class="black1"></div>
+            <div class="black1"><p>Elwin</p></div>
         </div>
         <div class="transformer2">
             <a href="#"><p></p></a>
-            <div class="black1"></div>
+            <div class="black1"><p>Estrella</p></div>
         </div>
         <div class="transformer3">
             <a href="#"><p></p></a>
-            <div class="black1"></div>
+            <div class="black1"><p>Lisa</p></div>
         </div>
         <div class="transformer4">
             <a href="#"><p></p></a>
-            <div class="black1"></div>
+            <div class="black1"><p>Luca</p></div>
         </div>
         <div class="transformer5">
             <a href="#"><p></p></a>
-            <div class="black1"></div>
+            <div class="black1"><p>Yasmine</p></div>
         </div>
     </div>
 
@@ -78,6 +78,32 @@
         </div>
     </div>
     
+    <!-- Doneer en impact -->
+
+    <div class="doneerImpact">
+        <div class="doneer">
+            <div>
+                <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
+                <p>Zou je ons graag willen helpen, maar heb je gewoonweg<br> de tijd niet (en wel een paar eurotjes over)? Dan kan je alsnog<br>impact maken door te doneren wat jij kwijt kan. Hiermee help je<br>ons onder andere om meer (h)erkenning en peer suport te creëren<br>tussen jongeren onderling, en om tools te ontwikkelen die jongeren<br>helpen mentaal gezond te zijn.</p>
+            </div>
+            <div>
+                <a class="doneerButton" href="#">Doneer</a>
+            </div>
+        </div>
+        <div class="impact">
+            <h1>Wil je impact maken?</h1>
+            <p>Het is onze missie om kennis over mentale gezondheid mainstream<br>te maken en jongeren te empoweren om mentaal gezond te zijn. En<br>daar hebben wij jou bij nodig! Wil jij je ook inzetten voor een<br>samenleving waarin onze mentale gezondheid centraal staat? Meld<br>je dan aan als vrijwilliger!</p>
+            <div>
+                <a class="impactButton" href="#">Word Transformer</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+    </footer>
 
     
 
