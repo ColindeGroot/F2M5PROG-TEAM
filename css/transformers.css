@@ -87,6 +87,7 @@ header{
 }
 
 .lifeButton {
+    transition: 0.2s;
     padding: 10px;
     background-color: #7F46F2;
     border-radius: 1.5rem;
@@ -94,6 +95,7 @@ header{
 }
 
 .lifeButton:hover {
+    transition: 0.2s;
     background-color: #533099;
 }
 
@@ -113,11 +115,7 @@ header{
     grid-gap: 10px;
     grid-template-columns:  repeat(5, 300px);
     grid-template-rows: repeat(1, 300px);
-    padding: 50px;
-}
-
-.transformer>a{
-    position: absolute;
+    padding: 90px;
 }
 
 .transformer1, .transformer2, .transformer3, .transformer4, .transformer5{
@@ -127,6 +125,7 @@ header{
     background-size: 150% 100%;
     background-position: center;
     box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0 ;
+    
 }
 
 .transformer1:hover  .black1, .transformer2:hover  .black1, .transformer3:hover  .black1, .transformer4:hover  .black1, .transformer5:hover .black1 {
@@ -253,7 +252,7 @@ img {vertical-align: middle;}
 
 /* Missie & Visie */
 .missie{
-    background-image: url("../images/grandious.png");
+    background-image: url("../images/oke.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;

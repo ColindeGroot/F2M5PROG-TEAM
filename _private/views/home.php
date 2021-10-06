@@ -44,24 +44,24 @@
     </div>
 
     <!-- Fotos van transformers -->
-    <div class="transformers" id="dash">
+    <div  data-aos="zoom-in-down" class="transformers" id="dash">
         <div class="transformer1">
             <a href="#"><p></p></a>
             <div class="black1"><p>Elwin</p></div>
         </div>
-        <div class="transformer2">
+        <div  data-aos="zoom-in-down" class="transformer2">
             <a href="#"><p></p></a>
             <div class="black1"><p>Estrella</p></div>
         </div>
-        <div class="transformer3">
+        <div  data-aos="zoom-in-down" class="transformer3">
             <a href="#"><p></p></a>
             <div class="black1"><p>Lisa</p></div>
         </div>
-        <div class="transformer4">
+        <div  data-aos="zoom-in-down" class="transformer4">
             <a href="#"><p></p></a>
             <div class="black1"><p>Luca</p></div>
         </div>
-        <div class="transformer5">
+        <div  data-aos="zoom-in-down" class="transformer5">
             <a href="#"><p></p></a>
             <div class="black1"><p>Yasmine</p></div>
         </div>

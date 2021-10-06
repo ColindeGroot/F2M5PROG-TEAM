@@ -13,6 +13,14 @@
 	<?php endif; ?>
 
     <!-- Javascript files -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- Navagation & header -->
@@ -40,5 +48,13 @@
 
 
     <!-- foto -->
+    <script type="module">
+  import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper(...)
+</script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html> 
