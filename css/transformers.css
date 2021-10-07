@@ -14,14 +14,16 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
-    background: lightblue;
+    background: white;
     height:50px;
     z-index: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
 }
 .logo a{
     align-items: center;
     padding:25%;
-    color:white;
+    color:black;
     font-size: 20px;
     margin-left:40%;
     font-family: 'Redressed', cursive;
@@ -48,7 +50,7 @@ header{
     padding-top:4em;
     text-align:center;
     width:100%;
-    background-color:rgb(196, 196, 196);
+    background-color:rgb(255, 255, 255);
     margin-right:10px;
     height:30px;
     position:sticky;
@@ -73,7 +75,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 500px;
+    height: 700px;
 }
 
 .lifeSection {
@@ -199,6 +201,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding:125px;
 }
 
 /* Caption text */ 
@@ -312,6 +315,7 @@ img {vertical-align: middle;}
     text-align: center;
     align-items: center;
     justify-content: center;
+    border-radius: 5%;
 }
 
 .doneer {
@@ -325,9 +329,13 @@ img {vertical-align: middle;}
 }
 
 .doneerButton, .impactButton {
+    transition: 0.2s;
     padding: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    background-color: #7F46F2;
+    border-radius: 1.5rem;
+    color: white;
+}
+.doneerButton:hover, .impactButton:hover{
+    transition: 0.2s;
+    background-color: #533099;
 }
