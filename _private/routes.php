@@ -12,7 +12,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	// Lees de docs, daar zie je hoe je routes kunt maken: https://github.com/skipperbent/simple-php-router#routes
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
-	SimpleRouter::get( '/amy', 'WebsiteController@amy' )->name( 'home' );
+	SimpleRouter::get('/registreren', 'RegistrationController@registrationForm')->name('register.form');
 
 
 
@@ -25,6 +25,8 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 } );
 
+// login routes
+//SimpleRouter::get ('/login', 'LoginController@loginForm')->('login.form');
 
 // Dit zorgt er voor dat bij een niet bestaande route, de 404 pagina wordt getoond (die hierboven als route staat ingesteld)
 SimpleRouter::error( function ( Request $request, \Exception $exception ) {
