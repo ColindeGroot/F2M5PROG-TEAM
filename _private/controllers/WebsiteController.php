@@ -12,16 +12,10 @@ namespace Website\Controllers;
  */
 class WebsiteController {
 
-	public function home() {
+	public function registrationForm() {
 
 		$template_engine = get_template_engine();
 		echo $template_engine->render('home');
-
-	}
-	public function amy() {
-
-		$template_engine = get_template_engine();
-		echo $template_engine->render('amy');
 
 	}
 

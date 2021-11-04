@@ -6,6 +6,14 @@
 
     <div class="slideshow-container">
 
+  
+        <div class="webslider" id="home"></div>
+    </div>
+
+    <!-- fotoslider -->
+
+    <!--<div class="slideshow-container">
+
         <div class="mySlides fade">
         <img src="../../images/kopie3.png" style="width:100%">
         </div>
@@ -28,7 +36,7 @@
     </div>
         
     </div> 
-
+-->
     <!-- life sucks -->
     <div class="lifesuckssection">
         <div class="lifeSection">
@@ -79,7 +87,7 @@
     </div>
     
 
-    <div class="doneerImpact">
+     <div class="doneerImpact">
         <div class="doneer">
             <div>
                 <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
@@ -97,7 +105,7 @@
             </div>
         </div>
     </div> 
-
+    
 
     <footer>
 
@@ -126,4 +134,3 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
-

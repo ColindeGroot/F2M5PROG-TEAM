@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    font-family:sans-serif, 'NotoSance Regular';
+    font-family: sans-serif, 'NotoSance Regular';
 }
 
-h1{
-    font-family:sans-serif, 'DN Pro bold';
+h1 {
+    font-family: sans-serif, 'DN Pro bold';
 }
 
-header{
+header {
     padding-top: 0.4vw;
     padding-bottom: 0.4vw;
     display: flex;
@@ -20,11 +20,10 @@ header{
     width: 100%;
     background: white;
     z-index: 1;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav{
+nav {
     display: flex;
     height: 80px;
     width: 92%;
@@ -33,21 +32,25 @@ nav{
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
-  }
-  nav .logo{
+}
+
+nav .logo {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-  }
-  nav ul{
+}
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-  }
-  nav ul li{
+}
+
+nav ul li {
     margin: 0 5px;
-  }
-  nav ul li a{
+}
+
+nav ul li a {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
@@ -56,68 +59,74 @@ nav{
     border-radius: 5px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
+}
+
+nav ul li a.active,
+nav ul li a:hover {
     color: #111;
     background: #fff;
-  }
-  nav .menu-btn i{
+}
+
+nav .menu-btn i {
     color: #fff;
     font-size: 22px;
     cursor: pointer;
     display: none;
-  }
-  input[type="checkbox"]{
+}
+
+input[type="checkbox"] {
     display: none;
-  }
-  @media (max-width: 1000px){
-    nav{
-      padding: 0 40px 0 50px;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
     }
-  }
-  @media (max-width: 920px) {
-    nav .menu-btn i{
-      display: block;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
     }
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d";
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
     }
-    nav ul{
-      position: fixed;
-      top: 80px;
-      left: -100%;
-      background: #111;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      display: block;
-      transition: all 0.3s ease;
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
     }
-    #click:checked ~ ul{
-      left: 0;
+    #click:checked~ul {
+        left: 0;
     }
-    nav ul li{
-      width: 100%;
-      margin: 40px 0;
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
     }
-    nav ul li a{
-      width: 100%;
-      margin-left: -100%;
-      display: block;
-      font-size: 20px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    #click:checked ~ ul li a{
-      margin-left: 0px;
+    #click:checked~ul li a {
+        margin-left: 0px;
     }
     nav ul li a.active,
-    nav ul li a:hover{
-      background: none;
-      color: cyan;
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
     }
-  }
-  .content{
+}
+
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -127,80 +136,88 @@ nav{
     width: 100%;
     padding: 0 30px;
     color: #1b1b1b;
-  }
-  .content div{
+}
+
+.content div {
     font-size: 40px;
     font-weight: 700;
-  }
-.titellife{
+}
+
+.titellife {
     font-size: 3vw !important;
 }
 
-.title2life{
+.title2life {
     font-size: 1.5vw !important;
     margin-top: 1vw;
 }
 
-.titelbeschijving{
+.titelbeschijving {
     font: 1vw !important;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
 
-.logo a{
+.logo a {
     align-items: center;
-    padding:25%;
-    color:black;
+    padding: 25%;
+    color: black;
     font-size: 3vw;
-    margin-left:40%;
+    margin-left: 40%;
     font-family: 'Redressed', cursive;
 }
-.inlogbuttons{
-    float:right;
-    align-items:center;
+
+.inlogbuttons {
+    float: right;
+    align-items: center;
     padding-right: 1vw;
     /*padding-right:10%;*/
-    margin-right:3%;
-}
-.inlogbuttons a{
-    padding:10px;
-    color:black;
-    background-color:rgb(244, 250, 255);
-    border-radius: 15rem;
-   
-}
-.inlogbuttons a:hover{
-    background-color:#FE8D0D;
-    border-radius: 15rem;
-    text-decoration:none;
-}
-.navbar{
-    position:sticky;
-    text-align:center;
-    padding-left:10%;
-    
-}
-.navbar a{
-    color:black;
+    margin-right: 3%;
 }
 
-.navbar>a{
-    padding-left:3em;
+.inlogbuttons a {
+    padding: 10px;
+    color: black;
+    background-color: rgb(244, 250, 255);
+    border-radius: 15rem;
 }
+
+.inlogbuttons a:hover {
+    background-color: #FE8D0D;
+    border-radius: 15rem;
+    text-decoration: none;
+}
+
+.navbar {
+    position: sticky;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar>a {
+    padding-left: 3em;
+}
+
 @media screen and (max-width: 600px) {
-    .navbar {position: relative;}
-    .navbar{
-      float: none;
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-    }	
-    .navbar a.icon {
-      float: right;
-      display: block;
+    .navbar {
+        position: relative;
     }
-  
-  }
+    .navbar {
+        float: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
 
 /* Life sucks section */
 
@@ -245,7 +262,8 @@ nav{
     margin-right: auto;
     justify-content: center;
     align-content: center;
-} 
+}
+
 
 /* Transfromers */
 
@@ -253,28 +271,35 @@ nav{
     display: grid;
     justify-content: center;
     grid-gap: 10px;
-    grid-template-columns:  repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding: 90px;
 }
 
-.transformer1, .transformer2, .transformer3, .transformer4, .transformer5{
+.transformer1,
+.transformer2,
+.transformer3,
+.transformer4,
+.transformer5 {
     height: 4vw;
     width: 4vw;
     border-radius: 100%;
     background-size: 150% 100%;
     background-position: center;
-    box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0 ;
-    
+    box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0;
 }
 
-.transformer1:hover  .black1, .transformer2:hover  .black1, .transformer3:hover  .black1, .transformer4:hover  .black1, .transformer5:hover .black1 {
+.transformer1:hover .black1,
+.transformer2:hover .black1,
+.transformer3:hover .black1,
+.transformer4:hover .black1,
+.transformer5:hover .black1 {
     visibility: visible;
     cursor: pointer;
     opacity: 50%;
 }
 
-.transformer1 { 
+.transformer1 {
     width: 100%;
     height: 100%;
     background-image: url(../images/elwin.png);
@@ -320,57 +345,15 @@ nav{
 }
 
 @media only screen and (max-width: 1274px) {
-    
-.transformer1, .transformer2, .transformer3, .transformer4, .transformer5{
-
+    .transformer1,
+    .transformer2,
+    .transformer3,
+    .transformer4,
+    .transformer5 {}
 }
 
-.transformer1 { 
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/elwin.png);
-    grid-area: transformer1;
-    grid-column: 1;
-    grid-row: 1;
-}
 
-.transformer2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Estrella.jpg);
-    grid-area: transformer2;
-    grid-column: 1;
-    grid-row: 2;
 }
-
-.transformer3 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Lisa.png);
-    grid-area: transformer3;
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.transformer4 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Luca1.png);
-    grid-area: transformer4;
-    grid-row: 4;
-    grid-column: 1;
-}
-
-.transformer5 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/yasminefoto.png);
-    grid-area: transformer5;
-    grid-row: 5;
-    grid-column: 1;
-}
-  }
-
 .black1 {
     display: flex;
     background-color: black;
@@ -380,81 +363,88 @@ nav{
     visibility: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
-    align-items: center;  
+    align-items: center;
 }
-
-.black1>p{
+.black1>p {
     margin-left: 45%;
     opacity: 100%;
 }
 
-
-
 /* slideshow */
-.mySlides {display: none;
-    z-index: -1;}
-img {vertical-align: middle;}
-
+.mySlides {
+    display: none;
+    z-index: -1;
+}
+img {
+    vertical-align: middle;
+}
 
 /* Slideshow container van coolin AKA COLEN */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  padding:125px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 125px;
 }
 
-/* Caption text */ 
+/* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
-
-
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
 }
-
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
 }
-
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+    .text {
+        font-size: 11px
+    }
 }
 
 /* Missie & Visie */
-.missie{
+.missie {
     background-image: url("../images/oke.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -464,49 +454,50 @@ img {vertical-align: middle;}
     align-content: center;
     height: 1000px;
 }
-.missieTekst{
-    text-align:center;
-    color:#f2f2f2;
+.missieTekst {
+    text-align: center;
+    color: #f2f2f2;
 }
-.missieTitel{
-    font-size:40px;
+.missieTitel {
+    font-size: 40px;
 }
-.tekstmissie{
-    padding:30px;
-    font-size:20px;
+.tekstmissie {
+    padding: 30px;
+    font-size: 20px;
 }
-.missievisie{
-    text-align:center;
-    font-size:20px;
-    text-decoration:none;
+.missievisie {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
 }
-.missievisie>a{
-    color:#f2f2f2;
-    background-color:#7F46F2;
+.missievisie>a {
+    color: #f2f2f2;
+    background-color: #7F46F2;
     padding: 10px;
     border-radius: 1.5rem;
     color: white;
 }
-.missievisie>a:hover{
+.missievisie>a:hover {
     background-color: #7F46F2;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Doneer en Impact */
-
 .doneerImpact {
     /* display: flex;
     flex-direction: row; */
+    
     justify-content: center;
     /* align-content: center; */
+    
     display: grid;
     grid-gap: 17%;
-    grid-template-columns:  repeat(2, 500px);
+    grid-template-columns: repeat(2, 500px);
     height: 500px;
     padding: 100px;
 }
-
-.doneer, .impact {
+.doneer,
+.impact {
     background-color: #533099;
     color: white;
     width: 500px;
@@ -517,38 +508,36 @@ img {vertical-align: middle;}
     justify-content: center;
     border-radius: 5%;
 }
-
 .doneer {
     grid-column: 1;
     grid-row: 1;
 }
-
 .impact {
     grid-column: 2;
     grid-row: 1;
 }
-
-.doneerButton, .impactButton {
+.doneerButton,
+.impactButton {
     transition: 0.2s;
     padding: 10px;
     background-color: #7F46F2;
     border-radius: 1.5rem;
     color: white;
-    
 }
-.doneerButton:hover, .impactButton:hover{
+.doneerButton:hover,
+.impactButton:hover {
     transition: 0.2s;
     background-color: #533099;
 }
 
 /* Scroll bar */
-::-webkit-scrollbar{
-    width:10px;
+::-webkit-scrollbar {
+    width: 10px;
     border-radius: 5%;
-    
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(0, 0, 0);
     border-radius: 10px;
-  }
+}
+
 /* Scroll bar chrome*/
