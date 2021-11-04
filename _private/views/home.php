@@ -2,8 +2,7 @@
     <div>
         <div class="webslider" id="home"></div>
     </div>
-
-    <!-- fotoslider -->
+ <!-- fotoslider -->
 
     <div class="slideshow-container">
 
@@ -33,9 +32,9 @@
     <!-- life sucks -->
     <div class="lifesuckssection">
         <div class="lifeSection">
-            <h1>Life Sucks Sometimes</h1>
-            <h2>Maar je staat er niet alleen voor.</h2>
-            <p>De transformers community is er voor jongeren die<br>zelfverzekerd willen zijn en tegenslagen omzetten in<br> kracht. We doen dit samen: zo leren we meer<br> en helpen we elkaar om te groeien.</p>
+            <h1 class="titellife">Life Sucks Sometimes</h1>
+            <h2 class="title2life">Maar je staat er niet alleen voor.</h2>
+            <p class="titelbeschijving">De transformers community is er voor jongeren die<br>zelfverzekerd willen zijn en tegenslagen omzetten in<br> kracht. We doen dit samen: zo leren we meer<br> en helpen we elkaar om te groeien.</p>
         
         </div>
         <div class="buttonDiv">
@@ -69,7 +68,6 @@
         </div>
     </div>
 
-    <!-- Missie en visie -->
     <div class="missie">
         <div class="missieTekst">
             <h1 class="missieTitel">Wij zijn een groeiende beweging van jongeren die zich<br> inzet voor mentale gezondheid.</h1>
@@ -80,33 +78,29 @@
         </div>
     </div>
     
-    <!-- Doneer en impact -->
 
     <div class="doneerImpact">
         <div class="doneer">
             <div>
-                <h1 class="doneerTekst">Geen tijd, maar wel bijdragen? Doneer!</h1>
-                <p class="doneerTekst">Zou je ons graag willen helpen, maar heb je gewoon weg de tijd niet (en wel een paar eurotjes over)? Dan kan je alsnogimpact maken door te doneren wat jij kwijt kan. Hiermee help je ons onder andere om meer (h)erkenning en peer suport te creëren tussen jongeren onderling, en om tools te ontwikkelen die jongeren helpen mentaal gezond te zijn.</p>
+                <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
+                <p>Zou je ons graag willen helpen, maar heb je gewoonweg<br> de tijd niet (en wel een paar eurotjes over)? Dan kan je alsnog<br>impact maken door te doneren wat jij kwijt kan. Hiermee help je<br>ons onder andere om meer (h)erkenning en peer suport te creëren<br>tussen jongeren onderling, en om tools te ontwikkelen die jongeren<br>helpen mentaal gezond te zijn.</p>
             </div>
             <div>
                 <a class="doneerButton" href="#">Doneer</a>
             </div>
         </div>
         <div class="impact">
-            <h1 class="impactTekst">Wil je impact maken?</h1>
-            <p class="impactTekst">Het is onze missie om kennis over mentale gezondheid mainstream te maken en jongeren te empoweren om mentaal gezond te zijn. En daar hebben wij jou bij nodig! Wil jij je ook inzetten voor een samenleving waarin onze mentale gezondheid centraal staat? Meld je dan aan als vrijwilliger!</p>
+            <h1>Wil je impact maken?</h1>
+            <p>Het is onze missie om kennis over mentale gezondheid mainstream<br>te maken en jongeren te empoweren om mentaal gezond te zijn. En<br>daar hebben wij jou bij nodig! Wil jij je ook inzetten voor een<br>samenleving waarin onze mentale gezondheid centraal staat? Meld<br>je dan aan als vrijwilliger!</p>
             <div>
                 <a class="impactButton" href="#">Word Transformer</a>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <!-- Footer -->
 
     <footer>
-        <div>
-            
-        </div>
+
     </footer>
  
     
@@ -132,3 +126,4 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
+
