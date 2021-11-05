@@ -57,10 +57,10 @@
          </label>
          <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="#">About ons</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Inloggen</a></li>
+            <li><a href="#">Aanmelden</a></li>
          </ul>
       </nav>
       
