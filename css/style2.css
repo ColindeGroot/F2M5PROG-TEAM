@@ -1,0 +1,201 @@
+body {
+    margin: 0%;
+    font-family:sans-serif, "NotoSance Regular";
+}
+
+/* Navigation bar */
+
+.navbar > a{
+    color: #1E07A0;
+}
+
+.inlogbuttons > a {
+    color: white;
+}
+
+.navbar > a {
+    height: 50px;
+    width: 50px;
+    margin-left: 15%;
+    transition: 0.5s;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar > a:hover{
+    transition: 0.5s;
+    /* text-decoration: none; */
+    color: #FE4E02;
+}
+
+.logo {
+    width: 100%;
+}
+
+.inlogbuttons {
+    width: 100%;
+    text-align: right;
+}
+
+.inlogbuttons > a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: #1E07A0;
+    transition: 0.5s;
+}
+
+.inlogbuttons > a:hover {
+    transition: 0.5s;
+    background-color: #FE4E02;
+}
+
+#home {
+    margin: 0%;
+}
+
+.navbar, .navheader, .inlogbuttons, .logo {
+    padding: 5px;
+}
+
+.navheader {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+/* Eerste stuk */
+
+.container  {
+    background-color: #1E07A0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lifesucks {
+    color: white;
+
+}
+
+.lifesucks > h3 {
+    margin: 0;
+}
+
+.lifesucks > p {
+    margin: 0;
+}
+
+.video {
+}
+
+/* Transformers sectie */
+
+.containerFormers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#dash {
+    display: grid;
+    justify-content: center;
+    grid-gap: 5%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+}
+
+.transformer1,
+.transformer2,
+.transformer3,
+.transformer4,
+.transformer5 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-size: 150% 100%;
+    background-position: center;
+    /* box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0; */
+}
+
+.transformer1:hover .black1,
+.transformer2:hover .black1,
+.transformer3:hover .black1,
+.transformer4:hover .black1,
+.transformer5:hover .black1 {
+    visibility: visible;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.transformer1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/elwin.png);
+    grid-area: transformer1;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.transformer2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Estrella.jpg);
+    grid-area: transformer2;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.transformer3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Lisa.png);
+    grid-area: transformer3;
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.transformer4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Luca1.png);
+    grid-area: transformer4;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.transformer5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/yasminefoto.png);
+    grid-area: transformer5;
+    grid-row: 2;
+    grid-column: 4;
+}
+
+.black1 {
+    display: flex;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+}
+
+.black1>p {
+    margin-left: 45%;
+    opacity: 100%;
+}

@@ -202,106 +202,7 @@
         padding-left: 3em;
     }
     
-    @media screen and (min-width: 375px) {
-        nav {
-            position: relative;
-            width: auto;
-        }
-        nav {
-            float: none;
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-        }
-        nav a.icon {
-            float: right;
-            display: block;
-        }
-        #dash {
-            display: grid;
-            justify-content: center;
-            /*grid-gap: ;*/
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            padding: 90px;
-        }
-        .transformer1,
-        .transformer2,
-        .transformer3,
-        .transformer4,
-        .transformer5 {
-            height: 3vw;
-            width: 3vw;
-            border-radius: 100%;
-            background-size: 150% 100%;
-            background-position: center;
-            box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0;
-        }
-        .transformer1:hover .black1,
-        .transformer2:hover .black1,
-        .transformer3:hover .black1,
-        .transformer4:hover .black1,
-        .transformer5:hover .black1 {
-            visibility: visible;
-            cursor: pointer;
-            opacity: 50%;
-        }
-        .transformer1 {
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/elwin.png);
-            grid-area: transformer1;
-            grid-column: 1;
-            grid-row: 1;
-        }
-        .transformer2 {
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/Estrella.jpg);
-            grid-area: transformer2;
-            grid-column: 3;
-            grid-row: 1;
-        }
-        .transformer3 {
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/Lisa.png);
-            grid-area: transformer3;
-            grid-column: 5;
-            grid-row: 1;
-        }
-        .transformer4 {
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/Luca1.png);
-            grid-area: transformer4;
-            grid-row: 2;
-            grid-column: 2;
-        }
-        .transformer5 {
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/yasminefoto.png);
-            grid-area: transformer5;
-            grid-row: 2;
-            grid-column: 4;
-        }
-        .black1 {
-            display: flex;
-            background-color: black;
-            height: 300px;
-            width: 300px;
-            border-radius: 100%;
-            visibility: hidden;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            align-items: center;
-        }
-        .black1>p {
-            margin-left: 45%;
-            opacity: 100%;
-        }
-    }
+    
     /* Life sucks section */
     
     .lifesuckssection {
@@ -351,10 +252,10 @@
     #dash {
         display: grid;
         justify-content: center;
-        /*grid-gap: ;*/
+        grid-gap: 5%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        padding: 90px;
+        /* padding: 90px; */
     }
     
     .transformer1,
@@ -362,8 +263,8 @@
     .transformer3,
     .transformer4,
     .transformer5 {
-        height: 3vw;
-        width: 3vw;
+        height: 300px;
+        width: 300px;
         border-radius: 100%;
         background-size: 150% 100%;
         background-position: center;
@@ -624,3 +525,157 @@
         border-radius: 10px;
     }
     /* Scroll bar chrome*/
+
+    @media screen and (max-width: 1880px) {
+        nav {
+            position: relative;
+            width: auto;
+        }
+        nav {
+            float: none;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+        nav a.icon {
+            float: right;
+            display: block;
+        }
+        #dash {
+            display: grid;
+            justify-content: center;
+            grid-gap: 5%;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            padding: 90px;
+        }
+        .transformer1,
+        .transformer2,
+        .transformer3,
+        .transformer4,
+        .transformer5 {
+            height: 3vw;
+            width: 3vw;
+            border-radius: 100%;
+            background-size: 150% 100%;
+            background-position: center;
+            box-shadow: 10px 10px 16px 0px #c4912d, 0 17px 50px 0;
+        }
+        .transformer1:hover .black1,
+        .transformer2:hover .black1,
+        .transformer3:hover .black1,
+        .transformer4:hover .black1,
+        .transformer5:hover .black1 {
+            visibility: visible;
+            cursor: pointer;
+            opacity: 50%;
+        }
+        .transformer1 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/elwin.png);
+            grid-area: transformer1;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .transformer2 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/Estrella.jpg);
+            grid-area: transformer2;
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .transformer3 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/Lisa.png);
+            grid-area: transformer3;
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .transformer4 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/Luca1.png);
+            grid-area: transformer4;
+            grid-row: 4;
+            grid-column: 1;
+        }
+        .transformer5 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/yasminefoto.png);
+            grid-area: transformer5;
+            grid-row: 5;
+            grid-column: 1;
+        }
+        .black1 {
+            display: flex;
+            background-color: black;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            visibility: hidden;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            align-items: center;
+        }
+        .black1>p {
+            margin-left: 45%;
+            opacity: 100%;
+        }
+
+        /* Doneer en Impact */
+    
+        .doneerImpact {
+            /* display: flex;
+            flex-direction: row; */
+            justify-content: center;
+            /* align-content: center; */
+            display: grid;
+            grid-gap: 17%;
+            grid-template-columns: repeat(1, 500px);
+            grid-template-rows: repeat(2, 500px);
+            height: 500px;
+            padding: 100px;
+        }
+    
+        .doneer,
+        .impact {
+            background-color: #533099;
+            color: white;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5%;
+        }
+    
+        .doneer {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .impact {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
+        .doneerButton,
+        .impactButton {
+            transition: 0.2s;
+            padding: 10px;
+            background-color: #7F46F2;
+            border-radius: 1.5rem;
+            color: white;
+        }
+    
+        .doneerButton:hover,
+        .impactButton:hover {
+            transition: 0.2s;
+            background-color: #533099;
+        }
+    }

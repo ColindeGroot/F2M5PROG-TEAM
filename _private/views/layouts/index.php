@@ -7,7 +7,7 @@
     <title>Transformers Community</title>
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="<?php echo site_url( '/css/transformers.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/style2.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
@@ -20,13 +20,35 @@
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../../../splide-3.2.5/dist/css/splide.min.css">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src="../../../splide-3.2.5/dist/js/splide.min.js"></script>
 
 </head>
 <body>
+    
     <!-- Navagation & header -->
+
+    <div class="navheader">
+        <div class="logo">
+            <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="#" id="home">Home</a>
+            <a href="#">Over ons</a>
+            <a href="#">Word Transformer</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="inlogbuttons">
+            <a href="#">Aanmelden</a>
+            <a href="#">Inloggen</a>
+        </div>
+    </div>
+
+
+
     <!-- <div class="navheader">
         <header class="header">
             <div class="logo">
@@ -47,7 +69,7 @@
         
     </div> -->
 
-    <nav>
+    <!-- <nav>
          <div class="logo">
             Brand
          </div>
@@ -63,7 +85,7 @@
             <li><a href="#">Aanmelden</a></li>
          </ul>
       </nav>
-      
+       -->
     <!-- webslider coolin -->
     <?php echo $this->section( 'content' ) ?>
 
