@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformers community</title>
     <!-- css inladen-->
-    <link rel="stylesheet" href="<?php echo site_url( '/css/.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/doneer.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/footer.css' ) ?>" media="all">
-    <link rel="stylesheet" href="<?php echo site_url( '/css/style2.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/home_style.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/.css' ) ?>" media="all">
     
 </head>
@@ -29,7 +29,7 @@
 
 <div class="containerFormers">
     <div class="TransformersTekst">
-        <h1>Onze Transformers</h1>
+        <h1 class="OT">Onze Transformers</h1>
     </div>
     <div class="slider">
         <div class="splide">
@@ -71,6 +71,42 @@
         </div>
     </div>
 </div>
+
+<!-- Doneer -->
+<div class="doneer">
+        <div class="doneerTekst">
+            <h1>Geen tijd, maar wel bijdragen? Doneer!</h1>
+            <p>Zou je ons graag willen helpen, maar heb je gewoonweg de tijd niet<br> (en wel een paar eurotjes over)?
+                Dan kan je alsnog impact maken door te doneren wat jij kwijt kan.<br>
+                Hiermee help je ons onder ander om meer (h)erkening en peer suport<br> te creëren tussen jongeren onderling, en om tool te ontwikkelen die<br>
+                jongeren helpen mentaal gezond te zijn.
+            </p>
+        </div>
+        <div class="doneerButton">
+            <a href="#">Doneer</a>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="footerLinks">
+            <div class="footerLogo">
+                <img src="Transformers.webp" alt="">
+            </div>
+            <h2>Wij empoweren jongeren<br>om mentaal gezond te zijn</h2>
+            <p>Stichting Transformers Community is geregisteerd bij<br> de Kamer van Koophandel onder<br> RSIN nummer 861477194</p>
+        </div>
+        <div class="footerRechts">
+            <h2>Let's keep in touch!</h2>
+            <p>Wil je verhalen en praktische tips ontvangen? Schrijf je<br> in voor onze nieuwsbrief:</p>
+            <input type="text" name="" placeholder="Email*">
+            <a href="#">Aanmelden</a> 
+            
+           
+
+        </div>
+      
+    </footer>
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function () {
