@@ -1,5 +1,18 @@
 <?php $this->layout('layouts::index');?>
 <!-- Eerste stuk -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers community</title>
+    <!-- css inladen-->
+    <link rel="stylesheet" href="<?php echo site_url( '/css/.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/footer.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/style2.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/.css' ) ?>" media="all">
+    
+</head>
 
 <div class="container">
     <div class="lifesucks">

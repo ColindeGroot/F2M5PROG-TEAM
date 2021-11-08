@@ -1,3 +1,4 @@
+
 <?php
 // Dit bestand hoort bij de router, en bevat nog een aantal extra functies je kunt gebruiken
 // Lees meer: https://github.com/skipperbent/simple-php-router#helper-functions
@@ -10,24 +11,23 @@ require_once __DIR__ . '/route_helpers.php';
  * Verbinding maken met de database
  * @return \PDO
  */
-function dbConnect() {
+function dbConnect()
+{
 
-	$config = get_config( 'DB' );
+	$config = get_config('DB');
 
 	try {
-		$dsn = 'mysql:host=' . $config['HOSTNAME'] . ';dbname=' . $config['DATABASE'] . ';charset=utf8';
+		$dsn = 'mysql:host=' . $config['HOSTNAME'] . ';dbname=' . $config['DATABASE'] . ';port=' . $config['PORT'] . ';charset=utf8';
 
-		$connection = new PDO( $dsn, $config['USER'], $config['PASSWORD'] );
-		$connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-		$connection->setAttribute( PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC );
+		$connection = new PDO($dsn, $config['USER'], $config['PASSWORD']);
+		$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 		return $connection;
-
-	} catch ( \PDOException $e ) {
+	} catch (\PDOException $e) {
 		echo 'Fout bij maken van database verbinding: ' . $e->getMessage();
 		exit;
 	}
-
 }
 
 /**
@@ -38,34 +38,36 @@ function dbConnect() {
  *
  * @return string
  */
-function site_url( $path = '' ) {
-	return get_config( 'BASE_URL' ) . $path;
+function site_url($path = '')
+{
+	return get_config('BASE_URL') . $path;
 }
 
-function get_config( $name ) {
+function get_config($name)
+{
 	$config = require __DIR__ . '/config.php';
-	$name   = strtoupper( $name );
+	$name   = strtoupper($name);
 
-	if ( isset( $config[ $name ] ) ) {
-		return $config[ $name ];
+	if (isset($config[$name])) {
+		return $config[$name];
 	}
 
-	throw new \InvalidArgumentException( 'Er bestaat geen instelling met de key: ' . $name );
+	throw new \InvalidArgumentException('Er bestaat geen instelling met de key: ' . $name);
 }
 
 /**
  * Hier maken we de template engine en vertellen de template engine waar de templates/views staan
  * @return \League\Plates\Engine
  */
-function get_template_engine() {
+function get_template_engine()
+{
 
-	$templates_path = get_config( 'PRIVATE' ) . '/views';
+	$templates_path = get_config('PRIVATE') . '/views';
 
-	$template_engine = new League\Plates\Engine( $templates_path );
+	$template_engine = new League\Plates\Engine($templates_path);
 	$template_engine->addFolder('layouts', $templates_path . '/layouts');
 
 	return $template_engine;
-
 }
 
 /**
@@ -76,13 +78,93 @@ function get_template_engine() {
  *
  * @return bool
  */
-function current_route_is( $name ) {
+function current_route_is($name)
+{
 	$route = request()->getLoadedRoute();
 
-	if ( $route ) {
-		return $route->hasName( $name );
+	if ($route) {
+		return $route->hasName($name);
 	}
 
 	return false;
+}
+function validateRegistrationData($data)
+{
+	$errors = [];
 
+	// Checks: valideren of mail echt een geldig email is
+	$gebruikersnaam	= trim($data["gebruikersnaam"]);
+
+	$wachtwoord	= trim($data["wachtwoord"]);
+
+
+	if (strlen($gebruikersnaam) == 0) {
+		$errors['gebruikersnaam'] = '(geen geldig gebruikersnaam moet ingevuld worden)';
+	}
+
+
+
+	// Checks: wachtwoord minimaal 6 tekens bevat
+	if (strlen($wachtwoord) < 6) {
+		$errors['wachtwoord'] = '(geen geldig wachtwoord minimaal 6 tekens)';
+	}
+
+	// Resultaat array
+	$data = [
+		'gebruikersnaam' => $data['gebruikersnaam'],
+		'wachtwoord' => $wachtwoord
+	];
+
+	return [
+		'data' => $data,
+		'errors' => $errors
+	];
+}
+function userNotRegistered($gebruikersnaam)
+{
+	$connection = dbConnect();
+	$sql = "SELECT * FROM `gebruikers` WHERE `gebruikersnaam` = :gebruikersnaam";
+
+	$statement = $connection->prepare($sql);
+
+	$statement->execute(['gebruikersnaam' => $gebruikersnaam]);
+	
+	$num_rows = $statement->rowCount();
+
+	return ($num_rows === 0); // True of false
+}
+
+function loginUser($user){
+	$_SESSION['user_id'] = $user['id'];
+}
+function logoutUser(){
+	unset($_SESSION['user_id']);
+}
+function isLoggedIn(){
+	return !empty($_SESSION['user_id']);
+}
+function loginCheck(){
+	if ( ! isLoggedIn()){
+		$login_url = url('login.form');
+		redirect( $login_url );
+}
+}
+
+function validateBerichtData($data, Pecee\Http\Input\InputFile $afbeelding)
+{
+	$errors = [];
+
+	$onderwerp	= trim($data["onderwerp"]);
+	$beschrijving	= trim($data["beschrijving"]);
+
+	$data = [
+		'onderwerp' => $onderwerp,
+		'beschrijving' => $beschrijving,
+		'afbeelding' => $afbeelding
+	];
+
+	return [
+		'data' => $data,
+		'errors' => $errors
+	];
 }
