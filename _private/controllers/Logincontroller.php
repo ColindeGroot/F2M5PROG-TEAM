@@ -2,12 +2,7 @@
 
 namespace Website\Controllers;
 
-/**
- * Class LoginController
- */
-
-class LoginController
-{
+class LoginController {
 
 	public function login_form()
 	{
@@ -56,4 +51,4 @@ class LoginController
 		logoutUser();
 		redirect(url('home'));
 	}
-}
+} 

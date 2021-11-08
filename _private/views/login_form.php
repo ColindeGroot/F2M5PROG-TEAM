@@ -23,6 +23,3 @@
         <button class="form_element cta-button" type="submit">Login</button>
 
     </form>
-
-    <p>of registreer <a href="<?php echo url( 'registratie.form' ) ?>"<?php if ( current_route_is( 'registratie.form' ) ): ?> <?php endif ?>>hier</a> als je nog geen account hebt.</p>
-    <!-- <p>of log <a href="#">hier</a> in als je al een account hebt</p> -->
