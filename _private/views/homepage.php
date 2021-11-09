@@ -28,9 +28,6 @@
 <!-- Transformers -->
 
 <div class="containerFormers">
-    <div class="TransformersTekst">
-        <h1 class="OT">Onze Transformers</h1>
-    </div>
     <div class="slider">
         <div class="splide">
             <div class="splide__track">
@@ -47,6 +44,9 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="TransformersTekst">
+        <h1 class="OT">Onze Transformers</h1>
     </div>
     <div  data-aos="zoom-in-down" class="transformers" id="dash">
         <div class="transformer1">

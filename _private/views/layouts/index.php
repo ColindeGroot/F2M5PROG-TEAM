@@ -30,7 +30,6 @@
 <body>
     
     <!-- Navagation & header -->
-
     <div class="navheader">
         <div class="logo">
             <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
@@ -44,6 +43,10 @@
         <div class="inlogbuttons">
             <a href="#">Aanmelden</a>
             <a href="#">Inloggen</a>
+            <div class="navbar_buttons" > 
+            <div><a class="cta-button" href="<?php echo url( 'registratie.form' ) ?>"<?php if ( current_route_is( 'registratie.form' ) ): ?> <?php endif ?>>Registreer</a></div>
+            <div><a class="cta-button" href="<?php echo url( 'login.form' ) ?>"<?php if ( current_route_is( 'login.form' ) ): ?> <?php endif ?>>login</a></div>
+        </div>
         </div>
     </div>
 

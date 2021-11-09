@@ -10,7 +10,7 @@ class RegistrationController {
 	public function home() {
 
 		$template_engine = get_template_engine();
-		echo $template_engine->render('home');
+		echo $template_engine->render('homepage');
 
 	}
 

@@ -45,15 +45,14 @@ body {
     text-decoration: none;
     padding: 10px;
     border-radius: 2rem;
-    background-color: white;
-    border-color: #FE4E02;
+    color: #1E07A0;
     transition: 0.5s;
 }
 
 .inlogbuttons > a:hover {
     transition: 0.5s;
-    background-color: #FE4E02;
-    color: white;
+    color: #FE4E02;
+    background-color: white;
 }
 
 #home {
