@@ -33,7 +33,7 @@
 html {
   margin: 0;
   height: 100vh;
-  background-image: linear-gradient(to bottom left, rgb(68, 68, 68), #5626CA);
+  background-image: linear-gradient(to bottom left, rgb(255, 255, 255), #5626CA);
   background-repeat: no-repeat;
   
 }

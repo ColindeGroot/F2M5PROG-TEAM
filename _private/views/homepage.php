@@ -13,9 +13,15 @@
 </head>
 <div class="container">
     <div class="lifesucks">
-        <h1 class="titellife">Life Sucks Sometimes</h1>
-        <h3 class="title2life">Maar je staat er niet alleen voor.</h3>
-        <p class="titelbeschijving">De transformers community is er voor jongeren die<br>zelfverzekerd willen zijn en tegenslagen omzetten in<br> kracht. We doen dit samen: zo leren we meer<br> en helpen we elkaar om te groeien.</p>
+        <h1>Praat over dingen<br> die je eerder<br> nergerns kwijt kon.</h1>
+        <p>In onze Online Community kan je binnen een<br> 
+            veilige omgeving (anoniem) jouw ervaringen<br>
+            en gevoelens delen.Hier helpen en steunen <br>
+            we elkaar. Ook worden er wekelijks praktische<br>
+            tips gedeeld die jou helpen om zelfverzekerd<br>
+            te zijn en om te gaan met moeilijke situaties.<br>
+        </p>
+        
     </div>
     <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/yH-YlklV-T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -86,7 +92,7 @@
             
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src="../../images/tekt3.png" style="width:100%">
+              <img src="../../images/tekst3.png" style="width:100%">
             </div>
             
         </div>
@@ -98,19 +104,20 @@
         </div> 
     </div>
     <div class="praatOvertekst">
-        <p>De online Community</p>
-        <h1>Praat over dingen<br> die je eerder<br> nergerns kwijt kon.</h1>
-        <p>In onze Online Community kan je binnen een<br> 
-            veilige omgeving (anoniem) jouw ervaringen<br>
-            en gevoelens delen.Hier helpen en steunen <br>
-            we elkaar. Ook worden er wekelijks praktische<br>
-            tips gedeeld die jou helpen om zelfverzekerd<br>
-            te zijn en om te gaan met moeilijke situaties.<br>
-        </p>
-        <div class="onlineCommunity">
+        <h1 class="titellife">Life Sucks Sometimes</h1>
+        <h3 class="title2life">Maar je staat er niet alleen voor.</h3>
+        <p class="titelbeschijving">De transformers community is er voor jongeren die
+            <br>zelfverzekerd willen zijn en tegenslagen omzetten in
+            <br> kracht. We doen dit samen: zo leren we meer
+            <br> en helpen we elkaar om te groeien.
+            <div class="onlineCommunity">
             <a href="#" class="onlineCommunityButton" >Meld je Gratis aan</a>
         </div>
+        </p>
     </div>
+
+    
+    
 </div>
 
 <div class="balk"></div>
@@ -166,4 +173,25 @@
 } );
 
 splide.mount();
+
+var slideIndex = 0;
+     showSlides();
+        
+function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+        </script>
 </script>

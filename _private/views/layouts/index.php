@@ -34,19 +34,29 @@
       <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
     </div>
     <nav class="navbar">
-      <a href="#" id="home">Home</a>
-      <a href="#">Over ons</a>
+      <a href="http://localhost:8000/" id="home">Home</a>
+      <a href="https://www.transformers.community/over-ons">Over ons</a>
       <a href="#">Word Transformer</a>
-        <a href="#">Contact</a>
+        <a href="https://www.transformers.community/contact">Contact</a>
     </nav>
     <div class="inlogbuttons">
       <!--<a href="register_form.php">Aanmelden</a>
       <a href="">Inloggen</a>-->
       <div class="navbar_buttons" > 
-      <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'register_form' ) ): ?> <?php endif ?>>Registreer</a></div>
-            <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'login_form' ) ): ?> <?php endif ?>>login</a></div>
+        <div>
+          <strong>
+            <a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'register_form' ) ): ?> <?php endif ?>>Registreer</a>
         </div>
+          </strong>
+        <div>
+          <strong>
+            <a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'login_form' ) ): ?> <?php endif ?>>login</a>
+          </strong>
         </div>
+        
+        
+        </div>
+    </div>
   </div>    
     <?php echo $this->section( 'content' ) ?>
 
