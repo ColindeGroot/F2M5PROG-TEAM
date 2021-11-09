@@ -32,6 +32,29 @@ body {
     color: #1E07A0;
 }
 
+.cta-button{
+
+    display: flex;
+    float: right;
+    text-decoration: none;
+}
+
+.cta-button:hover{
+    color: #FE4E02;
+}
+
+.cta-button:active{
+    color: #FE4E02;
+}
+
+.navbar_buttons{
+    margin-right: 3rem;
+    float: right;
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo {
     width: 100%;
 }
