@@ -1,78 +1,147 @@
-.content {
-    height: 92vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.registratie-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    height: 84vh;
+.titelCon {
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.registratie_box {
-    background-color: var(--whitewhite);
-    height: 575px;
-    border-radius: 20px;
-    margin-left: -2em;
-    padding: 5em 3em 5em 3em;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+#titel{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 30px;
+  margin-left: -30px;
+  animation: animate 10s linear infinite;
+  background-image: linear-gradient(135deg, rgb(255, 255, 255) 0%, red 25%, white 50%, rgb(255, 0, 0) 75%, rgb(255, 255, 255) 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+@keyframes animate{
+  100%{
+    background-position: 200%;
+  }
 }
 
-.registratie_box form {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 200px;
+html {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
+  background-repeat: no-repeat;
+  
 }
 
-.registratie_box h3 {
-    color: var(--secondary);
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-form input {
-    padding: .5em;
-    border-radius: 10px;
-    border-style: none;
-    background-color: rgb(243, 243, 243);
+.signupSection {
+  /* background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800); */
+  background-color: black;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }
 
-.registratie_image {
-    height: 550px;
-    border-radius: 20px;
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, .8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, .8);
+    /* h2{
+    padding-top: 30px;
+    font-weight: 300;
+    } */
+  /* p {
+    font-size: 18px;
+  } */
+  /* .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgba(10, 180, 180, 1);
+  } */
 }
 
-@media screen and (max-width: 1200px) {
-    .registratie-container {
-        height: 500px;
-    }
-
-    .registratie_image {
-        height: 400px;
-    }
-    .registratie_box {
-        height: 450px;
-    }
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(40, 21, 20, 0.85);
+  transition: .2s;
+  height: 86.7%;
+  /* h2 {
+    font-weight: 300;
+  } */
 }
 
-@media screen and (max-width: 800px) {
-    .registratie-container {
-        flex-direction: column;
-    }
-    .registratie_image {
-        height: 350px;
-    }
-    .registratie_box {
-        height: 400px;
-        width: 525px;
-        margin: 0;
-        margin-top: -1em;
-        padding: 1.5em 2em 1.5em 2em;
-    }
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgb(159, 5, 5);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
 
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid rgb(159, 5, 5);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  /* &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  } */
+}
+
+.kop1{
+  color: rgb(255, 0, 0);
+}
+
+.kop1:hover{
+  color: rgb(21, 255, 0);
+}
+
+.tekst{
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 1555px){
+  #titel{
+    display: none;
+  }
 }

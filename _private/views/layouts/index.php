@@ -7,7 +7,8 @@
     <title>Transformers Community</title>
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="<?php echo site_url( '/css/style2.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/home_style.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
@@ -29,67 +30,6 @@
 </head>
 <body>
     
-    <!-- Navagation & header -->
-    <div class="navheader">
-        <div class="logo">
-            <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <a href="#" id="home">Home</a>
-            <a href="#">Over ons</a>
-            <a href="#">Word Transformer</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="inlogbuttons">
-            <a href="#">Aanmelden</a>
-            <a href="#">Inloggen</a>
-            <div class="navbar_buttons" > 
-            <div><a class="cta-button" href="<?php echo url( 'registratie.form' ) ?>"<?php if ( current_route_is( 'registratie.form' ) ): ?> <?php endif ?>>Registreer</a></div>
-            <div><a class="cta-button" href="<?php echo url( 'login.form' ) ?>"<?php if ( current_route_is( 'login.form' ) ): ?> <?php endif ?>>login</a></div>
-        </div>
-        </div>
-    </div>
-
-
-
-    <!-- <div class="navheader">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">Logo</a>
-            </div>
-            <nav class="navbar" id="#topnav">
-                <a href="#home">Home</a>
-                <a href="overons.html">Over ons</a>
-                <a href="wordtransformer.html ">Word Transformer</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="inlogbuttons">
-                <a href="#">Aanmelden</a>
-                <a href="#">Inloggen</a>
-            </div>
-
-        </header>
-        
-    </div> -->
-
-    <!-- <nav>
-         <div class="logo">
-            Brand
-         </div>
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About ons</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Inloggen</a></li>
-            <li><a href="#">Aanmelden</a></li>
-         </ul>
-      </nav>
-       -->
-    <!-- webslider coolin -->
     <?php echo $this->section( 'content' ) ?>
 
 

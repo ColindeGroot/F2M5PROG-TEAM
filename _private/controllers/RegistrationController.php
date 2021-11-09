@@ -7,7 +7,8 @@ class RegistrationController {
 	public function registrationForm() {
 
 		$template_engine = get_template_engine();
-		echo $template_engine->render('homepage');
+		echo $template_engine->render('registratie_form');
+		echo "randomdingen";
 
 	}
 

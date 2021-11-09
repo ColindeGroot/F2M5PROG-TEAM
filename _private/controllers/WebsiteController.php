@@ -18,5 +18,11 @@ class WebsiteController {
 		echo $template_engine->render('homepage');
 
 	}
+	public function test() {
+
+		$template_engine = get_template_engine();
+		echo $template_engine->render('test');
+
+	}
 }
 

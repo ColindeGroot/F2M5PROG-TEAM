@@ -7,13 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformers community</title>
     <!-- css inladen-->
-    <link rel="stylesheet" href="<?php echo site_url( '/css/doneer.css' ) ?>" media="all">
-    <link rel="stylesheet" href="<?php echo site_url( '/css/footer.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/tekst.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/home_style.css' ) ?>" media="all">
-    <link rel="stylesheet" href="<?php echo site_url( '/css/.css' ) ?>" media="all">
     
 </head>
-
+    <!-- Navagation & header -->
+    <div class="navheader">
+        <div class="logo">
+            <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="#" id="home">Home</a>
+            <a href="#">Over ons</a>
+            <a href="#">Word Transformer</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="inlogbuttons">
+            <!--<a href="register_form.php">Aanmelden</a>
+            <a href="">Inloggen</a>-->
+            <div class="navbar_buttons" > 
+            <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'register_form' ) ): ?> <?php endif ?>>Registreer</a></div>
+            <div><a class="cta-button" href="<?php echo url( '' ) ?>"<?php if ( current_route_is( 'login.form' ) ): ?> <?php endif ?>>login</a></div>
+        </div>
+        </div>
+    </div>
+    
 <div class="container">
     <div class="lifesucks">
         <h1 class="titellife">Life Sucks Sometimes</h1>
@@ -71,7 +89,52 @@
         </div>
     </div>
 </div>
+<div class="balk"></div>
 
+<div class="tekst">
+    <div class="slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../../images/tekst1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../../images/tekst2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../../images/tekt3.png" style="width:100%">
+            </div>
+            
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div> 
+    </div>
+    <div class="praatOvertekst">
+        <p>De online Community</p>
+        <h1>Praat over dingen<br> die je eerder<br> nergerns kwijt kon.</h1>
+        <p>In onze Online Community kan je binnen een<br> 
+            veilige omgeving (anoniem) jouw ervaringen<br>
+            en gevoelens delen.Hier helpen en steunen <br>
+            we elkaar. Ook worden er wekelijks praktische<br>
+            tips gedeeld die jou helpen om zelfverzekerd<br>
+            te zijn en om te gaan met moeilijke situaties.<br>
+        </p>
+        <div class="onlineCommunity">
+            <a href="#" class="onlineCommunityButton" >Meld je Gratis aan</a>
+        </div>
+    </div>
+</div>
+
+<div class="balk"></div>
 <!-- Doneer -->
 <div class="doneer">
         <div class="doneerTekst">
