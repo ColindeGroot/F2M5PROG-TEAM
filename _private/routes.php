@@ -14,7 +14,6 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
 	SimpleRouter::post('/registreren/verwerken', 'RegistrationController@handleRegistrationForm')->name('register.handle');
 	SimpleRouter::get('/register','Logincontroller@login_form')->name('handleLoginForm');
-	SimpleRouter::get( '/test', 'WebsiteController@test' )->name( 'test' );
 	SimpleRouter::post('/inloggen', 'RegistrationController@handleRegistrationForm')->name('register.handle');
 	
 

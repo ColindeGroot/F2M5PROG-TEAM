@@ -4,13 +4,13 @@
 }
 
 .titelCon {
-  color: white;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
 
 #titel{
-  color: white;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   display: flex;
@@ -19,9 +19,8 @@
   padding-top: 30px;
   margin-left: -30px;
   animation: animate 10s linear infinite;
-  background-image: linear-gradient(135deg, rgb(255, 255, 255) 0%, red 25%, white 50%, rgb(255, 0, 0) 75%, rgb(255, 255, 255) 100%);
+  background-image: linear-gradient(135deg, rgb(255, 255, 255) 0%, #1E07A0 25%, white 50%, #5626CA(255, 0, 0) 75%, rgb(255, 255, 255) 100%);
   background-size: 200%;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
 }
@@ -34,7 +33,7 @@
 html {
   margin: 0;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
+  background-image: linear-gradient(to bottom left, rgb(68, 68, 68), #5626CA);
   background-repeat: no-repeat;
   
 }
@@ -45,9 +44,17 @@ body {
   overflow: hidden;
 }
 
+
+.text-left{
+  color: black
+}
+
+.text-head{
+  color: #FE4E02;
+}
+
 .signupSection {
-  /* background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800); */
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
@@ -57,15 +64,19 @@ body {
   height: 450px;
   text-align: center;
   display: flex;
-  color: white;
-  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+  box-shadow: 3px 10px 20px 5px rgba(255, 255, 255, 0.5);
+}
+
+.right-section{
+  background-color: #ffffff;
 }
 
 .info {
   width: 45%;
-  background: rgba(20, 20, 20, .8);
+  background: rgba(255, 255, 255, 0.8);
   padding: 30px 0;
-  border-right: 5px solid rgba(30, 30, 30, .8);
+  border-right: 5px solid #5726cac4;
+
     /* h2{
     padding-top: 30px;
     font-weight: 300;
@@ -83,7 +94,7 @@ body {
 .signupForm {
   width: 70%;
   padding: 30px 0;
-  background: rgba(40, 21, 20, 0.85);
+  background: #ffffff;
   transition: .2s;
   height: 86.7%;
   /* h2 {
@@ -96,11 +107,11 @@ body {
   font-size: 16px;
   padding: 10px;
   width: 250px;
-  border: 1px solid rgb(159, 5, 5);
+  border: 1px solid #5626CA;
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(20, 20, 20, .2);
+  background: rgba(20, 20, 20, 0);
   color: white;
   outline: none;
 }
@@ -111,8 +122,8 @@ body {
 }
 
 #join-btn {
-  border: 1px solid rgb(159, 5, 5);
-  background: rgba(20, 20, 20, .6);
+  border: 1px solid ;
+  background:#FE4E02;
   font-size: 18px;
   color: white;
   margin-top: 20px;
@@ -126,12 +137,10 @@ body {
 }
 
 .kop1{
-  color: rgb(255, 0, 0);
+  color: #FE4E02;
 }
 
-.kop1:hover{
-  color: rgb(21, 255, 0);
-}
+
 
 .tekst{
   margin-top: 80px;

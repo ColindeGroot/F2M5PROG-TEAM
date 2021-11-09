@@ -8,7 +8,6 @@
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="<?php echo site_url( '/css/home_style.css' ) ?>" media="all">
-    <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
@@ -29,7 +28,26 @@
 
 </head>
 <body>
-    
+  <!-- Navagation & header -->
+  <div class="navheader">
+    <div class="logo">
+      <a href=""><img src="../../../images/Transformers.webp" alt=""></a>
+    </div>
+    <nav class="navbar">
+      <a href="#" id="home">Home</a>
+      <a href="#">Over ons</a>
+      <a href="#">Word Transformer</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="inlogbuttons">
+      <!--<a href="register_form.php">Aanmelden</a>
+      <a href="">Inloggen</a>-->
+      <div class="navbar_buttons" > 
+        <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'register_form' ) ): ?> <?php endif ?>>Registreer</a></div>
+            <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'login_form' ) ): ?> <?php endif ?>>login</a></div>
+      </div>
+    </div>
+  </div>    
     <?php echo $this->section( 'content' ) ?>
 
 

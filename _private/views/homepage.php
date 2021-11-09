@@ -27,7 +27,7 @@
             <a href="">Inloggen</a>-->
             <div class="navbar_buttons" > 
             <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'register_form' ) ): ?> <?php endif ?>>Registreer</a></div>
-            <div><a class="cta-button" href="<?php echo url( '' ) ?>"<?php if ( current_route_is( 'login.form' ) ): ?> <?php endif ?>>login</a></div>
+            <div><a class="cta-button" href="<?php echo url( '/register' ) ?>"<?php if ( current_route_is( 'login_form' ) ): ?> <?php endif ?>>login</a></div>
         </div>
         </div>
     </div>
