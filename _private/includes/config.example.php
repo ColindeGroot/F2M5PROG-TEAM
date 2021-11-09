@@ -5,7 +5,7 @@
 
 $config = [
 	'DB'       => [
-		'HOSTNAME' => 'https://mediacollege-hosts-st1.cust.webslice.eu/',
+		'HOSTNAME' => '127.0.0.1',
 		'DATABASE' => 'sr2021',
 		'USER'     => 'c5695',
 		'PASSWORD' => 'Dataflex!2004'

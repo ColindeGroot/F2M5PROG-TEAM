@@ -1,10 +1,7 @@
-<?php $this->layout('layouts::website');?>
+<?php $this->layout('layouts::index');?>
 <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
 
 <div class="registratie-container">
-    <div>
-        <img class="registratie_image" src="<?php echo site_url( '/images/signup_image.png' ) ?>" alt="image">
-    </div>
     <div class="registratie_box">
         <div>
             <h3>Join onze community</h3>
