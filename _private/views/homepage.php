@@ -123,7 +123,7 @@
     
 </div>
 
-<div class="balk"></div>
+<div class="balk">ik ben pawel</div>
 <!-- Doneer -->
 <div class="doneer">
         <div class="doneerTekst">
