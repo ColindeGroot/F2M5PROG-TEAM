@@ -99,7 +99,7 @@ body {
 .container  {
     background-color: #5626CA;
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,6 +107,7 @@ body {
 
 .lifesucks {
     color: white;
+    padding: 3vh;
 
 }
 
@@ -117,6 +118,49 @@ body {
 .lifesucks > p {
     margin: 0;
 }
+
+.video {
+    padding: 3vh;
+}
+
+.videoIframe {
+    height: 315px;
+    width: 560px;
+}
+
+@media screen and (max-width: 920px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .videoIframe {
+        height: 225px;
+        width: 400px;
+    }
+}
+
+
+/* Transformers Slider */
+
+.slider {
+    padding-bottom: 10vh;
+}
+
+.Img1Slider {
+    content:url("../images/kopie1.png");
+}
+
+.Img2Slider {
+    content:url("../images/kopie2.png");
+}
+
+
+.Img3Slider {
+    content:url("../images/kopie3.png");
+}
+
 
 
 /* Transformers sectie */
@@ -163,6 +207,7 @@ body {
 .OT{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    margin: 0%;
 }
 
 .transformers{
@@ -236,6 +281,7 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding: 0%;
     
     }
     
@@ -244,7 +290,7 @@ body {
         justify-content: center;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        padding: 20px;
+        /* padding: 20px; */
         grid-gap:15px;
     }
     
@@ -341,4 +387,49 @@ body {
         margin-left: 45%;
         opacity: 100%;
     }
+}
+
+/* Slider mediaquerries */
+
+@media screen and (max-width: 1520px) {
+    .Img1Slider {
+        content:url("../images/Foto1-1500px.png");
+    }
+    
+    .Img2Slider {
+        content:url("../images/Foto2-1500px.png");
+    }
+    
+    
+    .Img3Slider {
+        content:url("../images/Foto3-1500px.png");
+    }
+    
+}
+
+@media screen and (max-width: 1080px) {
+    .Img1Slider {
+        content:url("../images/Foto1-1080px.png");
+    }
+    
+    .Img2Slider {
+        content:url("../images/Foto2-1080px.png");
+    }
+    
+    
+    .Img3Slider {
+        content:url("../images/Foto3-1080px.png");
+    }
+    
+}
+
+
+@media screen and (max-width: 840px) {
+    /* .slider {
+        display: none;
+    } */
+
+    /* .slider {
+        /* overflow: hidden; */
+    /* } */
 }

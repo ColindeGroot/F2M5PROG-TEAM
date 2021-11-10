@@ -24,7 +24,7 @@
         
     </div>
     <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yH-YlklV-T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="videoIframe" src="https://www.youtube.com/embed/yH-YlklV-T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -41,13 +41,13 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="../../images/kopie1.png" alt="">
+                        <img class="Img1Slider" alt="">
                     </li>
                     <li class="splide__slide">
-                        <img src="../../images/kopie2.png" alt="">
+                        <img class="Img2Slider" alt="">
                     </li>
                     <li class="splide__slide">
-                        <img src="../../images/kopie3.png" alt="">
+                        <img class="Img3Slider" alt="">
                     </li>
                 </ul>
             </div>
@@ -112,15 +112,12 @@
         <p class="titelbeschijving">De transformers community is er voor jongeren die
             <br>zelfverzekerd willen zijn en tegenslagen omzetten in
             <br> kracht. We doen dit samen: zo leren we meer
-            <br> en helpen we elkaar om te groeien.
+            <br> en helpen we elkaar om te groeien.</p>
             <div class="onlineCommunity">
             <a href="#" class="onlineCommunityButton" >Meld je Gratis aan</a>
         </div>
-        </p>
+        
     </div>
-
-    
-    
 </div>
 
 <div class="balk">ik ben pawel</div>
@@ -161,6 +158,21 @@
     </footer>
 
 <script>
+    function getWidth() {
+  if (self.innerWidth) {
+    return self.innerWidth;
+  }
+
+  if (document.documentElement && document.documentElement.clientWidth) {
+    return document.documentElement.clientWidth;
+  }
+
+  if (document.body) {
+    return document.body.clientWidth;
+  }
+}
+
+    var kupa = 2;
   document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-slider', {
         cover      : true,
@@ -195,6 +207,26 @@ function showSlides() {
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
             setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+
+        if (getWidth() < 841) {
+
+            var splide = new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 1,
+            focus  : 'center',
+            } );
+            console.log(getWidth());
+
+            splide.mount();
+        } else {
+            var splide = new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 3,
+            focus  : 'center',
+        } );
+
+        splide.mount();
     }
         </script>
 </script>
