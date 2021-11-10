@@ -100,7 +100,7 @@ body {
   padding: 30px 0;
   background: #ffffff;
   transition: .2s;
-  height: 86.7%;
+  height: 100%;
   /* h2 {
     font-weight: 300;
   } */
@@ -116,7 +116,7 @@ body {
   border-left: none;
   border-right: none;
   background: rgba(20, 20, 20, 0);
-  color: white;
+  color: black;
   outline: none;
 }
 
@@ -149,7 +149,7 @@ body {
 .tekst{
   margin-top: 80px;
   text-align: center;
-  color: white;
+  color: black;
   font-size: x-large;
 }
 

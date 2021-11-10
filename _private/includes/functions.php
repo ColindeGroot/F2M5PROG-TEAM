@@ -94,7 +94,6 @@ function validateRegistrationData($data)
 
 	// Checks: valideren of mail echt een geldig email is
 	$gebruikersnaam	= trim($data["gebruikersnaam"]);
-
 	$wachtwoord	= trim($data["wachtwoord"]);
 
 

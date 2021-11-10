@@ -1,6 +1,7 @@
-<?php $this->layout('layouts::index');?>
+<?php $this->layout('layouts::register');?>
 <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
 
+<?php $this->start('register') ?>
 
 <div class="signupSection" style="height: 650; top: 50%;">
   <div class="info">
@@ -8,7 +9,7 @@
     <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
     <p>Klik dan <a href="form.html" style="color: rgb(159, 5, 5);">hier</a> om te inloggen</p>
   </div>
-  <form style="height: 90.8%" action="<?php echo url("register.handle")?>" method="POST" class="signupForm" name="signupform">
+  <form style="height: 100%" action="<?php echo url("register.handle")?>" method="POST" class="signupForm" name="signupform">
     <h2>Account maken</h2>
     <ul class="noBullet">
       <li>
@@ -24,14 +25,6 @@
           <input type="password" class="inputFields" id="password" name="password2" placeholder="Herhaal wachtwoord" value="" oninput="return passwordValidation(this.value)" required/>
       </li>
       <li>
-          <label for="voornaam"></label>
-          <input type="text" class="inputFields" id="voornaam" name="voornaam" placeholder="Voornaam" value="" required/>
-      </li>
-      <li>
-          <label for="achternaam"></label>
-          <input type="text" class="inputFields" id="achternaam" name="achternaam" placeholder="Achternaam" value="" required/>
-      </li>
-      <li>
         <label for="email"></label>
         <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
       </li>
@@ -41,3 +34,4 @@
     </ul>
   </form>
 </div>
+<?php $this->stop() ?>

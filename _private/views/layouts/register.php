@@ -7,6 +7,7 @@
     <title>Transformers Community</title>
 
     <!-- Style Sheets -->
+    <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/home_style.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
@@ -58,7 +59,7 @@
         </div>
     </div>
   </div>    
-    <?php echo $this->section( 'content' ) ?>
+    <?php echo $this->section( 'register' ) ?>
 
 
 

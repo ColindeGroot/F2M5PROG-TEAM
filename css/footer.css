@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif, "NotoSance Regular";
+}
+
+/*Footer*/
+footer{
+    display:grid;
+    grid-template-columns:repeat(2, 2fr);
+    grid-template-rows:repeat(1, 2fr);
+    background-color: #5626CA;
+    color:white;
+    justify-content:center;
+    /*grid-column-gap:5%;*/
+    padding:5%;
+    line-height:1.5;
+    align-content:center;
+}
+footer>img{
+    height:100%;
+    width:auto;
+
+}
+.footerLinks{
+    grid-column:1;
+    grid-row:1;
+}
+.footerLinks>h2{
+    font-size:30px;
+}
+.footerLinks>p{
+    font-size:19px;
+}
+.footerCenter{
+    grid-column:2;
+    grid-row:1;
+    align-content:center;
+}
+.footerRechts{
+    grid-column:3;
+    grid-row:1;
+}
+.footerRechts>h2{
+    font-size:30px;
+}
+.footerRechts>a{
+    color:white;
+    text-decoration: none;
+    background-color: #FE8D0D;
+    transition: 0.2s;
+    padding:10px;
+    border-radius: 1.5rem;
+}
+.footerRechts>input{
+    color:white;
+    padding:10px;
+    border-radius: 1.5rem;
+    
+}
+.footerRechts>a:hover{
+    color:white;
+    text-decoration: none;
+    background-color: #FE4E02;
+    transition: 0.2s;
+    padding:10px;
+    border-radius: 1.5rem;
+}
+
+/*footer lijntjes*/
+
+
+/*Media querie footer*/
+@media screen and (max-width: 500px) {
+    footer{
+        display:grid;
+        grid-template-columns:repeat(1, 2fr);
+        grid-template-rows:repeat(1, 2fr);
+        background-color: #5626CA;
+        color:white;
+        justify-content:center;
+        grid-row-gap:5%;
+        padding:5%;
+        height:auto;
+    }
+    footer>img{
+        height:100%;
+        width:auto;
+    }
+    .footerLinks{
+        grid-column:1;
+        grid-row:1;
+    }
+    .footerLinks>h2{
+        font-size:20px;
+    }
+    .footerLinks>p{
+        font-size:15px;
+    }
+    .footerRechts{
+        grid-column:1;
+        grid-row:2;
+    }
+    .footerRechts>h2{
+        font-size:30px;
+    }
+    .footerRechts>a{
+        color:white;
+        text-decoration: none;
+        background-color: #FE8D0D;
+        transition: 0.2s;
+        padding:10px;
+        border-radius: 1.5rem;
+    }
+    .footerRechts>input{
+        color:white;
+        padding:10px;
+        border-radius: 1.5rem;
+    }
+    .footerRechts>a:hover{
+        color:white;
+        text-decoration: none;
+        background-color: #FE4E02;
+        transition: 0.2s;
+        padding:10px;
+        border-radius: 1.5rem;
+    } 
+    .footerAanmeldbutton{
+        margin-top: 50px;
+    }
+}
+

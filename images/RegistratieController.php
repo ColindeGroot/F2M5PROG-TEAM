@@ -14,7 +14,7 @@ class RegistratieController {
     public function form() {
 
         $template_engine = get_template_engine();
-        echo $template_engine->render('register_form');
+        echo $template_engine->render('registratie_form');
     }
 
     public function verwerking() {
@@ -24,13 +24,12 @@ class RegistratieController {
 
         // checks: valide email
         $email          = filter_var( $_POST['email'], FILTER_VALIDATE_EMAIL);
-        $wachtwoord     = trim( $_POST['password1']);
-        $gebruikersnaam = trim( $_POST['username']);
-
+        $wachtwoord     = trim( $_POST['wachtwoord']);
+        $gebruikersnaam = trim( $_POST['gebruikersnaam']);
 
         // checks: gebruikersnaam bevat minimaal 3 tekens
         if (strlen( $gebruikersnaam ) < 3 ) {
-            $errors['username'] = 'Gebruikersnaam moet minimaal 3 tekens bevatten';
+            $errors['gebruikersnaam'] = 'Gebruikersnaam moet minimaal 3 tekens bevatten';
         }
 
         if ( $email === false ) {
@@ -39,7 +38,7 @@ class RegistratieController {
 
         // checks: wachtwoord bevat minimaal 6 tekens
         if (strlen( $wachtwoord ) < 6 ) {
-            $errors['password1'] = 'Geen geldig wachtwoord, minimaal 6 tekens';
+            $errors['wachtwoord'] = 'Geen geldig wachtwoord, minimaal 6 tekens';
         }
 
         if (count($errors) === 0) {
@@ -63,7 +62,7 @@ class RegistratieController {
 
                 ];
                 $statement->execute($params);
-                redirect(url('inloggen'));
+                redirect(url('login.form'));
 
                 
             }else {
@@ -71,7 +70,7 @@ class RegistratieController {
                 $errors['email'] = 'Dit account bestaat al';
             }
         }
-        
-      }
+
+    }
 
 }

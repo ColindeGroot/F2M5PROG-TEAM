@@ -1,7 +1,7 @@
 <?php $this->layout('layouts::index');?>
 <link rel="stylesheet" href="<?php echo site_url( '/css/registratie.css' ) ?>" media="all">
 
-</div>
+
 <div class="signupSection">
   <div class="info">
     <h2 class="text-head">Geen account?</h2>
