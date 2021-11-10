@@ -28,6 +28,8 @@
     </div>
 </div>
 
+<div class="balk">ik ben pawel</div>
+
 <!-- Transformers -->
 
 <div class="containerFormers">
@@ -74,10 +76,11 @@
         </div>
     </div>
 </div>
+
 <div class="balk"></div>
 
 <div class="tekst">
-    <div class="slider">
+    <div class="slider2">
         <div class="slideshow-container">
 
             <div class="mySlides fade">

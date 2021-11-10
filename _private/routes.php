@@ -16,6 +16,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get('/register','RegistratieController@form')->name('register');
 	SimpleRouter::get('/inloggen','Logincontroller@login_form')->name('login_form');
 	SimpleRouter::post('/inloggen/verwerken', 'Logincontroller@handleLoginForm')->name('login.handle');
+	SimpleRouter::get('/dashboard','WebsiteController@login_form')->name('');
 
 
 	// STOP: Tot hier al je eigen URL's zetten, dit stukje laat de 4040 pagina zien als een route/url niet kan worden gevonden.
